@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+ 
+
+body {
+
+  font-size: 1rem;
+
+  font-family: sans-serif;
+
+  color: #f5f0ed;
+
+  font-family: "Quicksand";
+
+  font-weight: 500;
+
+  background-color: #5a3e2b;
+
+}
+
+ 
+
+header {
+
+  text-align: center;
+
+  background-color: #f4a226;
+
+  font-family: "Monoton";
+
+  font-size: 3rem;
+
+  text-transform: uppercase;
+
+  font-weight: 400;
+
+  word-spacing: 30px;
+
+  letter-spacing: -5px;
+
+  padding: 2.4rem 0;
+
+}
+
+ 
+
+.book {
+
+  display: flex;
+
+  gap: 0.7rem;
+
+  border-style: double;
+
+  padding: 50 px;
+
+}
+
+.book h1,
+
+h2 {
+
+  padding: 50 px;
+
+  gap: 0.2rem;
+
+}
+
+ 
+
+.book img {
+
+  width: 12rem;
+
+  align-self: center;
+
+  gap: 3.2rem;
+
+  margin-left: 20px;
+
+  margin-right: 10px;
+
+}
+
+ 
+
+.book div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.1rem;
+
+  padding: 0.2rem 0;
+
+}
+
+ 
+
+.book p {
+
+  font-size: 1.4rem;
+
+  font-weight: 300;
+
+  font-style: italic;
+
+  margin-bottom: auto;
+
+}
+
+ 
+
+button {
+
+  background-color: #ce3865;
+
+  color: #5a3e2b;
+
+  font-family: inherit;
+
+  border: double;
+
+  padding: 0.5rem 1rem;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+}
+
+ 
+
+.stats {
+
+  background-color: #ce3865;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  padding: 3.2rem 0;
+
+}
