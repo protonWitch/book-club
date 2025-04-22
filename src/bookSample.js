@@ -1,12 +1,22 @@
-export const booksSample = [
+export const books = [
+  {
+    image: "Covers/TsarOfLove&Techno.jpg",
+    title: "The Tsar of Love and Techno",
+    author: "Anothony Marra",
+    pages: 352,
+    meetingDate: "5/28/2025",
+    meetingLink: "",
+    isCurrent: 1,
+    member: "Peter",
+  },
   {
     image: "Covers/SirensOfTitan.jpg",
     title: "Sirens of Titan",
     author: "Kurt Vonnegut",
     pages: 336,
-    meetingDate: "4/20/2025",
+    meetingDate: "4/18/2025",
     meetingLink: "",
-    isCurrent: 1,
+    isCurrent: 0,
     member: "Kevin",
   },
   {
@@ -91,11 +101,11 @@ export const booksSample = [
   },
 ];
 
-export const memberSample = [
-  { name: "Monika", id: 1, isActive: 1, isCurrent: 1, isNext: 0 },
+export const members = [
+  { name: "Monika", id: 1, isActive: 1, isCurrent: 0, isNext: 0 },
   { name: "Rylei", id: 2, isActive: 1, isCurrent: 0, isNext: 0 },
   { name: "Shannon", id: 3, isActive: 1, isCurrent: 0, isNext: 0 },
   { name: "Kevin", id: 4, isActive: 1, isCurrent: 0, isNext: 0 },
-  { name: "Peter", id: 5, isActive: 1, isCurrent: 0, isNext: 1 },
-  { name: "Derek", id: 6, isActive: 1, isCurrent: 0, isNext: 0 },
+  { name: "Peter", id: 5, isActive: 1, isCurrent: 1, isNext: 0 },
+  { name: "Derek", id: 6, isActive: 1, isCurrent: 0, isNext: 1 },
 ];
