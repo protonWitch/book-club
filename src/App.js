@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { booksSample, memberSample } from "./bookSample";
 
 export default function App() {
   return (
@@ -12,78 +13,6 @@ export default function App() {
     </div>
   );
 }
-
-const booksSample = [
-  {
-    image: "AWalkInTheWoods.jpg",
-    title: "A Walk in the Woods",
-    author: "Bill Bryson",
-    pages: 276,
-    meetingDate: "12/10/2024",
-    meetingLink: "",
-    isCurrent: 1,
-    member: "Monika",
-  },
-  {
-    image: "3BodyProblem.jpg",
-    title: "The Three Body Problem",
-    author: "Cixin Liu",
-    pages: 416,
-    meetingDate: "11/9/2024",
-    meetingLink: "",
-    isCurrent: 0,
-    member: "Derek",
-  },
-  {
-    image: "10thOfDecember.jpg",
-    title: "10th of December",
-    author: "George Saunders",
-    pages: 288,
-    meetingDate: "10/10/2024",
-    meetingLink: "",
-    isCurrent: 0,
-    member: "Peter",
-  },
-  {
-    image: "TheSongOfAchilles.jpg",
-    title: "The Song of Achilles",
-    author: "Madeline Miller",
-    pages: 369,
-    meetingDate: "08/15/2024",
-    meetingLink: "",
-    isCurrent: 0,
-    member: "Kevin",
-  },
-  {
-    image: "TheWindKnowsMyName.jpg",
-    title: "The Wind Knows My Name",
-    author: "Isabel Allende",
-    pages: 273,
-    meetingDate: "07/25/2024",
-    meetingLink: "",
-    isCurrent: 0,
-    member: "Shannon",
-  },
-  {
-    image: "ThePrincessBride.jpg",
-    title: "The Princess Bride",
-    author: "William Goldman",
-    pages: 512,
-    meetingDate: "06/11/2024",
-    meetingLink: "",
-    isCurrent: 0,
-    member: "Rylei",
-  },
-];
-
-const memberSample = [
-  { name: "Monika", id: 1, isActive: 1, isCurrent: 1 },
-  { name: "Rylei", id: 2, isActive: 1, isCurrent: 0 },
-  { name: "Shannon", id: 3, isActive: 1, isCurrent: 0 },
-  { name: "Peter", id: 4, isActive: 1, isCurrent: 0 },
-  { name: "Kevin", id: 5, isActive: 1, isCurrent: 0 },
-  { name: "Derek", id: 6, isActive: 1, isCurrent: 0 },
-];
 
 function Header() {
   return <header className="header">Book Club</header>;
@@ -139,17 +68,47 @@ function MemberCard({ member }) {
   // const upNextId=
   return (
     <div className="member-card">
-      <p>{member.name}</p>
+      <div className="member-line">
+        <p className={member.isNext ? "upNext" : ""}>{member.name}</p>
+        {member.isNext ? <span className="up-next-indicator">NEXT</span> : ""}
+      </div>
     </div>
   );
 }
 
 function BookCard({ book }) {
   const [startingPage, setStartingPage] = useState(0);
-  const pagesPerDay = Math.round(
-    (book.pages - startingPage) /
-      ((Date.parse(book.meetingDate) - Date.now()) / (1000 * 3600 * 24))
-  );
+  const todaysDate = new Date(Date.now()).toLocaleDateString("en-US");
+  // const pagesPerDay = Math.round(
+  //   (book.pages - startingPage) /
+  //     ((Date.parse(book.meetingDate) - Date.now()) /
+  //       (1000 * 3600 * 24))
+  // );
+
+  function calculatePagesPerDay(book, startingPage) {
+    if (!book?.pages || !book?.meetingDate) {
+      console.error("Invalid book object or missing properties.");
+      return null;
+    }
+
+    const totalPages = book.pages - startingPage;
+    const todaysDate = new Date(Date.now()).toLocaleDateString("en-US");
+    const daysUntilMeeting =
+      (Date.parse(book.meetingDate) - Date.parse(todaysDate)) /
+      (1000 * 3600 * 24);
+
+    if (daysUntilMeeting <= 0) {
+      console.error("Meeting date has already passed or is invalid.");
+      return null;
+    }
+
+    console.log("startingPage:", startingPage);
+    console.log("book.meetingDate:", book.meetingDate);
+    console.log(todaysDate);
+    console.log(daysUntilMeeting);
+
+    return Math.round(totalPages / daysUntilMeeting);
+  }
 
   return (
     <div className="book-card">
@@ -161,20 +120,39 @@ function BookCard({ book }) {
         <p>Meeting Date: {book.meetingDate}</p>
       </div>
       <div className="pages-left">
-        <h3></h3>
+        <h3>
+          How many pages do I have to read per day to finish by the meeting
+          date?
+        </h3>
         <p>
           <label>What page are you on? </label>
           <input
-            className="inputBox"
+            className={
+              book.meetingDate === todaysDate
+                ? " inputBox disabled"
+                : "inputBox"
+            }
             type="text"
             value={startingPage}
             onChange={(e) => setStartingPage(Number(e.target.value))}
+            disabled={book.meetingDate === todaysDate}
           ></input>
         </p>
-        <label>
-          You must read {pagesPerDay} pages per day to finish by the meeting
-          date {pagesPerDay >= 50 ? "😱" : "😀"}
-        </label>
+        {book.meetingDate === todaysDate ? (
+          <p>
+            Today is the day of the meeting! What were you thinking?! You are
+            boned...
+          </p>
+        ) : (
+          <>
+            {" "}
+            <label>
+              You must read {calculatePagesPerDay(book, startingPage)} pages per
+              day to finish by the meeting date{" "}
+              {calculatePagesPerDay(book, startingPage) >= 50 ? "😱" : "😀"}
+            </label>
+          </>
+        )}
       </div>
     </div>
   );
