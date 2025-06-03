@@ -1,12 +1,22 @@
 export const books = [
   {
+    image: "Covers/LoveGoesBuildingsFire.jpg",
+    title: "Love Goes to Buildings on Fire",
+    author: "Will Hermes",
+    pages: 384,
+    meetingDate: "7/23/2025",
+    meetingLink: "",
+    isCurrent: 1,
+    member: "Derek",
+  },
+  {
     image: "Covers/TsarOfLove&Techno.jpg",
     title: "The Tsar of Love and Techno",
     author: "Anothony Marra",
     pages: 352,
     meetingDate: "5/28/2025",
     meetingLink: "",
-    isCurrent: 1,
+    isCurrent: 0,
     member: "Peter",
   },
   {
@@ -102,10 +112,10 @@ export const books = [
 ];
 
 export const members = [
-  { name: "Monika", id: 1, isActive: 1, isCurrent: 0, isNext: 0 },
+  { name: "Monika", id: 1, isActive: 1, isCurrent: 0, isNext: 1 },
   { name: "Rylei", id: 2, isActive: 1, isCurrent: 0, isNext: 0 },
   { name: "Shannon", id: 3, isActive: 1, isCurrent: 0, isNext: 0 },
   { name: "Kevin", id: 4, isActive: 1, isCurrent: 0, isNext: 0 },
-  { name: "Peter", id: 5, isActive: 1, isCurrent: 1, isNext: 0 },
-  { name: "Derek", id: 6, isActive: 1, isCurrent: 0, isNext: 1 },
+  { name: "Peter", id: 5, isActive: 1, isCurrent: 0, isNext: 0 },
+  { name: "Derek", id: 6, isActive: 1, isCurrent: 1, isNext: 0 },
 ];

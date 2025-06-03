@@ -21,11 +21,6 @@ export function BookCard({ book }) {
       return null;
     }
 
-    console.log("startingPage:", startingPage);
-    console.log("book.meetingDate:", book.meetingDate);
-    console.log(todaysDate);
-    console.log(daysUntilMeeting);
-
     return Math.round(totalPages / daysUntilMeeting);
   }
 
