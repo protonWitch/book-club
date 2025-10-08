@@ -1,0 +1,8 @@
+[
+  { "name": "Monika", "id": 1, "isActive": 1, "isCurrent": 0, "isNext": 0 },
+  { "name": "Rylei", "id": 2, "isActive": 1, "isCurrent": 1, "isNext": 0 },
+  { "name": "Shannon", "id": 3, "isActive": 1, "isCurrent": 0, "isNext": 1 },
+  { "name": "Kevin", "id": 4, "isActive": 1, "isCurrent": 0, "isNext": 0 },
+  { "name": "Peter", "id": 5, "isActive": 1, "isCurrent": 0, "isNext": 0 },
+  { "name": "Derek", "id": 6, "isActive": 1, "isCurrent": 0, "isNext": 0 }
+]

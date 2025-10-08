@@ -34,7 +34,7 @@ export const Archive = forwardRef(({ books }, ref) => {
     <div className="archive" ref={ref}>
       <header className="header arch">ARCHIVE</header>
 
-      <div class="archive-utilities">
+      <div className="archive-utilities">
         {/* Sort archive by title, author, date, or member */}
         <label htmlFor="archive-sort" className="archive-sort-label"></label>
         <select

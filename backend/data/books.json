@@ -1,0 +1,142 @@
+[
+  {
+    "image": "Covers/WaterMusic.jpg",
+    "title": "Water Music",
+    "author": "T. C. Boyle",
+    "pages": 437,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Monika",
+    "id": 0
+  },
+  {
+    "image": "Covers/ThePrincessBride.jpg",
+    "title": "The Princess Bride",
+    "author": "William Goldman",
+    "pages": 512,
+    "meetingDate": "06/11/2024",
+    "isCurrent": 0,
+    "member": "Rylei",
+    "id": 1
+  },
+  {
+    "image": "Covers/TheWindKnowsMyName.jpg",
+    "title": "The Wind Knows My Name",
+    "author": "Isabel Allende",
+    "pages": 273,
+    "meetingDate": "07/25/2024",
+    "isCurrent": 0,
+    "member": "Shannon",
+    "id": 2
+  },
+  {
+    "image": "Covers/TheSongOfAchilles.jpg",
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "pages": 369,
+    "meetingDate": "08/15/2024",
+    "isCurrent": 0,
+    "member": "Kevin",
+    "id": 3
+  },
+  {
+    "image": "Covers/10thOfDecember.jpg",
+    "title": "10th of December",
+    "author": "George Saunders",
+    "pages": 288,
+    "meetingDate": "10/10/2024",
+    "isCurrent": 0,
+    "member": "Peter",
+    "id": 4
+  },
+  {
+    "image": "Covers/3BodyProblem.jpg",
+    "title": "The Three Body Problem",
+    "author": "Cixin Liu",
+    "pages": 416,
+    "meetingDate": "11/9/2024",
+    "isCurrent": 0,
+    "member": "Derek",
+    "id": 5
+  },
+  {
+    "image": "Covers/AWalkInTheWoods.jpg",
+    "title": "A Walk in the Woods",
+    "author": "Bill Bryson",
+    "pages": 276,
+    "meetingDate": "12/10/2024",
+    "isCurrent": 0,
+    "member": "Monika",
+    "id": 6
+  },
+  {
+    "image": "Covers/Neuromancer.jpg",
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "pages": 336,
+    "meetingDate": "12/10/2024",
+    "isCurrent": 0,
+    "member": "Rylei",
+    "id": 7
+  },
+  {
+    "image": "Covers/James.jpg",
+    "title": "James",
+    "author": "Percival Everett",
+    "pages": 320,
+    "meetingDate": "12/10/2024",
+    "isCurrent": 0,
+    "member": "Shannon",
+    "id": 8
+  },
+  {
+    "image": "Covers/SirensOfTitan.jpg",
+    "title": "Sirens of Titan",
+    "author": "Kurt Vonnegut",
+    "pages": 336,
+    "meetingDate": "4/18/2025",
+    "isCurrent": 0,
+    "member": "Kevin",
+    "id": 9
+  },
+  {
+    "image": "Covers/TsarOfLove&Techno.jpg",
+    "title": "The Tsar of Love and Techno",
+    "author": "Anothony Marra",
+    "pages": 352,
+    "meetingDate": "5/28/2025",
+    "isCurrent": 0,
+    "member": "Peter",
+    "id": 10
+  },
+  {
+    "image": "Covers/LoveGoesBuildingsFire.jpg",
+    "title": "Love Goes to Buildings on Fire",
+    "author": "Will Hermes",
+    "pages": 384,
+    "meetingDate": "7/23/2025",
+    "isCurrent": 0,
+    "member": "Derek",
+    "id": 11
+  },
+  {
+    "image": "Covers/100YearsOfSolitude.jpg",
+    "title": "100 Years of Solitude",
+    "author": "Gabriel Garcia Marquez",
+    "pages": 417,
+    "meetingDate": "10/7/2025",
+    "isCurrent": 0,
+    "member": "Monika",
+    "id": 12
+  },
+  {
+    "image": "Covers/TheDevils.jpg",
+    "title": "The Devils",
+    "author": "Joe Abercrombe",
+    "pages": 560,
+    "meetingDate": "TBD",
+    "isCurrent": 1,
+    "member": "Rylei",
+    "id": 13
+  }
+]

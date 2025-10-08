@@ -1,5 +1,5 @@
-import React from "react";
-import { books, members } from "./bookSample";
+import React, { useEffect, useState } from "react";
+
 import { Nav } from "./components/Nav/Nav";
 import { Members } from "./components/Members/Members";
 import { Header } from "./components/Header/Header";
@@ -11,9 +11,26 @@ export default function App() {
   // eslint-disable-next-line no-undef
   const archiveRef = useRef(null);
 
+  const [books, setBooks] = useState([]);
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/data/books")
+      .then((response) => response.json())
+      .then((jsonData) => setBooks(jsonData))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/data/members")
+      .then((response) => response.json())
+      .then((jsonData) => setMembers(jsonData))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
   return (
     <div className="container">
-      <Nav archiveRef={archiveRef} className="nav-el" />
+      <Nav archiveRef={archiveRef} members={members} className="nav-el" />
       <Header className="header-el" />
       <CurrentBook className="current-book-el" books={books} />
       <Members className="member-el" members={members} />

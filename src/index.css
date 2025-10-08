@@ -65,6 +65,13 @@ body {
   background-color: #8b837d;
 }
 
+.work-in-progress {
+  font-size: 10rem;
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /*********************/
 /***** BOOK CARD *****/
 /*********************/
@@ -330,6 +337,7 @@ button:hover {
   .current-book {
     grid-row: 4;
     grid-column: 1;
+    height: auto;
   }
 
   .archive {

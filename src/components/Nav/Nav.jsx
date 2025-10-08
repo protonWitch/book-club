@@ -1,13 +1,10 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { members } from "../../bookSample";
+import { AddBookDialogBox } from "../AddBookDialogBox";
+import { useState } from "react";
 
-export function Nav({ archiveRef }) {
-  function handleAddNewBook() {
-    toast.info("Add New Book feature is coming soon... ish!", {
-      position: "top-center",
-    });
-  }
+export function Nav({ archiveRef, members }) {
+  const [addBookDialogOpen, setAddBookDialogOpen] = useState(false);
 
   function handleArchive() {
     if (archiveRef.current) {
@@ -30,7 +27,9 @@ export function Nav({ archiveRef }) {
 
   return (
     <nav className="nav">
-      <button onClick={handleAddNewBook} className="navButton">
+      <AddBookDialogBox></AddBookDialogBox>
+
+      <button onClick={() => setAddBookDialogOpen(true)} className="navButton">
         Add New Book
       </button>
 
@@ -41,6 +40,12 @@ export function Nav({ archiveRef }) {
       <button onClick={handleWhoIsNext} className="navButton">
         Who Is Next?
       </button>
+
+      <AddBookDialogBox
+        open={addBookDialogOpen}
+        setOpen={() => setAddBookDialogOpen(false)}
+      />
+
       <ToastContainer
         position="top-center"
         autoClose={5000}
