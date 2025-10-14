@@ -66,8 +66,11 @@ export function BookForm() {
     console.log("Form data:", formData);
     const validData = validateData(formData);
 
+    const serverUrl = "unholyfunk.com";
+    // const serverUrl = "localhost:5000";
+
     if (validData) {
-      fetch("https://localhost:5000/data/books", {
+      fetch("https://${serverUrl}/data/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

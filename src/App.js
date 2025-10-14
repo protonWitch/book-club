@@ -15,17 +15,17 @@ export default function App() {
   const [members, setMembers] = useState([]);
 
   const serverUrl = "unholyfunk.com";
-  // const serverUrl = "localhost";
+  // const serverUrl = "localhost:5000";
 
   useEffect(() => {
-    fetch(`https://${serverUrl}:5000/data/books`)
+    fetch(`https://${serverUrl}/data/books`)
       .then((response) => response.json())
       .then((jsonData) => setBooks(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
   useEffect(() => {
-    fetch(`https://${serverUrl}:5000/data/members`)
+    fetch(`https://${serverUrl}/data/members`)
       .then((response) => response.json())
       .then((jsonData) => setMembers(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
