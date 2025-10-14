@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #1f1c04;
-  background-image: url("file:///C:/Users/13039/Documents/GitHub/book-club/public/background.jpg");
+  background-image: url("/background.jpg");
   background-size: cover;
 }
 
