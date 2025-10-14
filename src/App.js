@@ -14,8 +14,8 @@ export default function App() {
   const [books, setBooks] = useState([]);
   const [members, setMembers] = useState([]);
 
-  // const serverUrl = "unholyfunk.com";
-  const serverUrl = "localhost";
+  const serverUrl = "unholyfunk.com";
+  // const serverUrl = "localhost";
 
   useEffect(() => {
     fetch(`http://${serverUrl}:5000/data/books`)
