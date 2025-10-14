@@ -18,14 +18,14 @@ export default function App() {
   // const serverUrl = "localhost";
 
   useEffect(() => {
-    fetch(`http://${serverUrl}:5000/data/books`)
+    fetch(`https://${serverUrl}:5000/data/books`)
       .then((response) => response.json())
       .then((jsonData) => setBooks(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
   useEffect(() => {
-    fetch(`http://${serverUrl}:5000/data/members`)
+    fetch(`https://${serverUrl}:5000/data/members`)
       .then((response) => response.json())
       .then((jsonData) => setMembers(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
