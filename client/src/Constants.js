@@ -1,3 +1,2 @@
-// export const serverUrl = "unholyfunk.com";
 export const serverUrl = "/server";
-// export const serverUrl = "localhost:5000";
+// export const serverUrl = "http://localhost:5000";
