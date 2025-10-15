@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { CurrentBook } from "./components/CurrentBook/CurrentBook";
 import { Archive } from "./components/Archive/Archive";
 import { useRef } from "react";
+import { serverUrl } from "./Constants";
 
 export default function App() {
   // eslint-disable-next-line no-undef
@@ -14,18 +15,15 @@ export default function App() {
   const [books, setBooks] = useState([]);
   const [members, setMembers] = useState([]);
 
-  const serverUrl = "unholyfunk.com";
-  // const serverUrl = "localhost:5000";
-
   useEffect(() => {
-    fetch(`https://${serverUrl}/data/books`)
+    fetch(`http://${serverUrl}/data/books`)
       .then((response) => response.json())
       .then((jsonData) => setBooks(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
   useEffect(() => {
-    fetch(`https://${serverUrl}/data/members`)
+    fetch(`http://${serverUrl}/data/members`)
       .then((response) => response.json())
       .then((jsonData) => setMembers(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
