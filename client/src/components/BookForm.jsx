@@ -68,7 +68,7 @@ export function BookForm() {
     const validData = validateData(formData);
 
     if (validData) {
-      fetch(`http://${serverUrl}/data/books`, {
+      fetch(`${serverUrl}/data/books`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

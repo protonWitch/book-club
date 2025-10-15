@@ -16,14 +16,14 @@ export default function App() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch(`http://${serverUrl}/data/books`)
+    fetch(`${serverUrl}/data/books`)
       .then((response) => response.json())
       .then((jsonData) => setBooks(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
   useEffect(() => {
-    fetch(`http://${serverUrl}/data/members`)
+    fetch(`${serverUrl}/data/members`)
       .then((response) => response.json())
       .then((jsonData) => setMembers(jsonData))
       .catch((error) => console.error("Error fetching JSON:", error));
