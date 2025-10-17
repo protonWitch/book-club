@@ -23,10 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # Backend dependencies
-/backend/node_modules/
+/server/node_modules/
 
 # Backend environment files
-/backend/.env
+/server/.env
 
 # Backend build artifacts (if any)
-/backend/dist/
+/server/dist/

@@ -2,9 +2,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AddBookDialogBox } from "../AddBookDialogBox";
 import { useState } from "react";
+import { PollModal } from "../Poll/PollModal";
 
 export function Nav({ archiveRef, members }) {
   const [addBookDialogOpen, setAddBookDialogOpen] = useState(false);
+  const [showPollModal, setShowPollModal] = useState(false);
 
   function handleArchive() {
     if (archiveRef.current) {
@@ -40,6 +42,9 @@ export function Nav({ archiveRef, members }) {
       <button onClick={handleWhoIsNext} className="navButton">
         Who Is Next?
       </button>
+
+      <button onClick={() => setShowPollModal(true)}>Meeting Date Poll</button>
+      {showPollModal && <PollModal onClose={() => setShowPollModal(false)} />}
 
       <AddBookDialogBox
         open={addBookDialogOpen}
