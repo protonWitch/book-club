@@ -20,6 +20,66 @@
     "id": 2
   },
   {
+    "image": "Covers/Annapurna.jpg",
+    "title": "Annapurna",
+    "author": "Maurice Herzog",
+    "pages": 321,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Monika",
+    "id": 3
+  },
+  {
+    "image": "Covers/Ishmael.jpg",
+    "title": "Ishmael",
+    "author": "Daniel Quinn",
+    "pages": 309,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Derek",
+    "id": 4
+  },
+  {
+    "image": "Covers/OnTrails.jpg",
+    "title": "On Trails",
+    "author": "Robert Moor",
+    "pages": 353,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Peter",
+    "id": 5
+  },
+  {
+    "image": "Covers/Recursion.jpg",
+    "title": "Recursion",
+    "author": "Blake Crouch",
+    "pages": 324,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Derek",
+    "id": 6
+  },
+  {
+    "image": "Covers/IndifferentStars.jpg",
+    "title": "The Indifferent Stars Above",
+    "author": "Daniel James Brown",
+    "pages": 384,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Rylei",
+    "id": 7
+  },
+  {
+    "image": "Covers/ManWalkedThruTime.jpg",
+    "title": "The Man Who Walked Through Time",
+    "author": "Colin Fletcher",
+    "pages": 256,
+    "meetingDate": "",
+    "isCurrent": 0,
+    "member": "Monika",
+    "id": 8
+  },
+  {
     "image": "Covers/ParadiseLost.jpg",
     "title": "Paradise Lost",
     "author": "John Milton",
@@ -27,7 +87,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Peter",
-    "id": 3
+    "id": 9
   },
   {
     "image": "Covers/Watchmen.jpg",
@@ -37,7 +97,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Derek",
-    "id": 4
+    "id": 10
   },
   {
     "image": "Covers/LeviathonWakes.jpg",
@@ -47,7 +107,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Rylei",
-    "id": 5
+    "id": 11
   },
   {
     "image": "Covers/CatcherRye.jpg",
@@ -57,7 +117,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Peter",
-    "id": 5
+    "id": 12
   },
   {
     "image": "Covers/WindUpBird.jpg",
@@ -67,7 +127,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Derek",
-    "id": 6
+    "id": 13
   },
   {
     "image": "Covers/WaterMusic.jpg",
@@ -77,7 +137,7 @@
     "meetingDate": "",
     "isCurrent": 0,
     "member": "Monika",
-    "id": 7
+    "id": 14
   },
   {
     "image": "Covers/ThePrincessBride.jpg",
@@ -87,7 +147,7 @@
     "meetingDate": "06/11/2024",
     "isCurrent": 0,
     "member": "Rylei",
-    "id": 8
+    "id": 15
   },
   {
     "image": "Covers/TheWindKnowsMyName.jpg",
@@ -97,7 +157,7 @@
     "meetingDate": "07/25/2024",
     "isCurrent": 0,
     "member": "Shannon",
-    "id": 9
+    "id": 16
   },
   {
     "image": "Covers/TheSongOfAchilles.jpg",
@@ -107,7 +167,7 @@
     "meetingDate": "08/15/2024",
     "isCurrent": 0,
     "member": "Kevin",
-    "id": 10
+    "id": 17
   },
   {
     "image": "Covers/10thOfDecember.jpg",
@@ -117,7 +177,7 @@
     "meetingDate": "10/10/2024",
     "isCurrent": 0,
     "member": "Peter",
-    "id": 11
+    "id": 18
   },
   {
     "image": "Covers/3BodyProblem.jpg",
@@ -127,7 +187,7 @@
     "meetingDate": "11/9/2024",
     "isCurrent": 0,
     "member": "Derek",
-    "id": 12
+    "id": 19
   },
   {
     "image": "Covers/AWalkInTheWoods.jpg",
@@ -137,7 +197,7 @@
     "meetingDate": "12/10/2024",
     "isCurrent": 0,
     "member": "Monika",
-    "id": 13
+    "id": 20
   },
   {
     "image": "Covers/Neuromancer.jpg",
@@ -147,7 +207,7 @@
     "meetingDate": "12/10/2024",
     "isCurrent": 0,
     "member": "Rylei",
-    "id": 14
+    "id": 21
   },
   {
     "image": "Covers/James.jpg",
@@ -157,7 +217,7 @@
     "meetingDate": "12/10/2024",
     "isCurrent": 0,
     "member": "Shannon",
-    "id": 15
+    "id": 22
   },
   {
     "image": "Covers/SirensOfTitan.jpg",
@@ -167,7 +227,7 @@
     "meetingDate": "4/18/2025",
     "isCurrent": 0,
     "member": "Kevin",
-    "id": 16
+    "id": 23
   },
   {
     "image": "Covers/TsarOfLove&Techno.jpg",
@@ -177,7 +237,7 @@
     "meetingDate": "5/28/2025",
     "isCurrent": 0,
     "member": "Peter",
-    "id": 17
+    "id": 24
   },
   {
     "image": "Covers/LoveGoesBuildingsFire.jpg",
@@ -187,7 +247,7 @@
     "meetingDate": "7/23/2025",
     "isCurrent": 0,
     "member": "Derek",
-    "id": 18
+    "id": 25
   },
   {
     "image": "Covers/100YearsOfSolitude.jpg",
@@ -197,7 +257,7 @@
     "meetingDate": "10/7/2025",
     "isCurrent": 0,
     "member": "Monika",
-    "id": 19
+    "id": 26
   },
   {
     "image": "Covers/TheDevils.jpg",
@@ -207,6 +267,6 @@
     "meetingDate": "11/23/2025",
     "isCurrent": 1,
     "member": "Rylei",
-    "id": 20
+    "id": 27
   }
 ]
