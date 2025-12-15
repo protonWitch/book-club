@@ -265,8 +265,18 @@
     "author": "Joe Abercrombie",
     "pages": 560,
     "meetingDate": "12/11/2025",
-    "isCurrent": 1,
+    "isCurrent": 0,
     "member": "Rylei",
     "id": 27
+  },
+   {
+    "image": "Covers/CinemaSpec.jpg",
+    "title": "Cinema Speculation",
+    "author": "Quentin Tarantino",
+    "pages": 370,
+    "meetingDate": "01/29/2026",
+    "isCurrent": 1,
+    "member": "Shannon",
+    "id": 28
   }
 ]
